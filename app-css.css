@@ -1,0 +1,100 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.loading,
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+
+.error {
+  color: red;
+}
+
+.App-header {
+  margin-bottom: 40px;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+section {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* APOD Section */
+.apod-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  text-align: left;
+}
+
+.apod-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.apod-info h3 {
+  margin-top: 0;
+}
+
+.date,
+.copyright {
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+/* Asteroid Section */
+.asteroid-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.asteroid-card {
+  background: #f8f9fa;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.asteroid-card h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.hazard {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.safe {
+  color: #27ae60;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .apod-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .asteroid-grid {
+    grid-template-columns: 1fr;
+  }
+}
